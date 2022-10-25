@@ -10,7 +10,7 @@
     "start": "next start",
     "build": "next build"
   },
-  "author": "Shu Ding",
+  "author": "Bing Bong",
   "license": "Apache-2.0",
   "dependencies": {
     "@reach/skip-nav": "^0.16.0",

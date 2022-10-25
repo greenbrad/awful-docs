@@ -1,7 +1,7 @@
----
-title: Getting started
-description: Lightweight, and persistent Lua Framework for World of Warcraft.
----
+import Callout from 'nextra-theme-docs/callout'
+import Link from 'next/link'
 
-Learn how to get Awful set up in your project in under thirty minutes or you can kick Brad in the balls.
+<Callout emoji="💡">
+  This quick < 20 minute start-up guide should get you from zero to hero and have your own addon successfully performing a rotation, or you can kick Brad in the balls.
+</Callout>
 
