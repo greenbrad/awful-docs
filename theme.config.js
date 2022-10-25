@@ -34,6 +34,7 @@ const FEEDBACK_LINK_WITH_TRANSLATIONS = {
   "pt-BR": "Dúvidas? Nos dê feedback →",
 };
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   projectLink: "#",
   titleSuffix: " – Awful",
@@ -51,6 +52,7 @@ export default {
   */
   feedbackLabels: "feedback",
   logo: () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const { locale } = useRouter();
     return (
       <>
@@ -61,6 +63,73 @@ export default {
         >
           Awful
         </span>
+      </>
+    );
+  },
+  head: ({ title, meta }) => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const { route } = useRouter();
+
+    const ogImage =
+      meta.image ||
+      `https://swr-card.vercel.app${
+        /\/index\.+/.test(route) ? "" : "?title=" + encodeURIComponent(title)
+      }`;
+
+    return (
+      <>
+        {/* Favicons, meta */}
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon/favicon-16x16.png"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link
+          rel="mask-icon"
+          href="/favicon/safari-pinned-tab.svg"
+          color="#000000"
+        />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta httpEquiv="Content-Language" content="en" />
+        <meta
+          name="description"
+          content={
+            meta.description ||
+            "Awful is a lightweight framework with extreme performance for creating Addons for World of Warcraft."
+          }
+        />
+        <meta
+          name="og:description"
+          content={
+            meta.description ||
+            "Awful is a lightweight framework with extreme performance for creating Addons for World of Warcraft."
+          }
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@vercel" />
+        <meta name="twitter:image" content={ogImage} />
+        <meta
+          name="og:title"
+          content={
+            title ? title + " – Awful" : "Docs – Awful"
+          }
+        />
+        <meta name="og:image" content={ogImage} />
+        <meta name="apple-mobile-web-app-title" content="SWR" />
       </>
     );
   },

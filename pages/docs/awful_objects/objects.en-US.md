@@ -1,6 +1,6 @@
----
-title: Introduction & Rules
----
+import Callout from 'nextra-theme-docs/callout'
+import Link from 'next/link'
+
 ## What are they?
 
 ### Basically tables, containing attributes & functions

@@ -1,6 +1,6 @@
----
-title: Player Attributes
----
+import Callout from 'nextra-theme-docs/callout'
+import Link from 'next/link'
+
 # These are attributes & functions only available to the `player` object.
 
 ## covenant

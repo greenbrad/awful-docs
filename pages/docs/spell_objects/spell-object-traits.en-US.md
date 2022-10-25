@@ -1,6 +1,5 @@
----
-title: Spell Object Traits
----
+import Callout from 'nextra-theme-docs/callout'
+import Link from 'next/link'
 
 # Setting Traits
 

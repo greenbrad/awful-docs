@@ -1,6 +1,5 @@
----
-title: Spell Object Attributes
----
+import Callout from 'nextra-theme-docs/callout'
+import Link from 'next/link'
 
 # What are they?
 

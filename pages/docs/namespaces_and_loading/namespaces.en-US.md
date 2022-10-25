@@ -1,3 +1,6 @@
+import Callout from 'nextra-theme-docs/callout'
+import Link from 'next/link'
+
 # What's a namespace?
 
 - Namespaces act as a modular, self-contained scope (**table**) to the identifiers (**variables**) inside of it. These identifiers can represent **functions**, **tables**, or **any other value type** in Lua. They are essentially **modules** containing all of these things packaged together, in a way that will not interfere with anything outside of them.
