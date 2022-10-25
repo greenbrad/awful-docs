@@ -1,7 +1,3 @@
----
-title: Object Attributes
----
-
 # Introduction
 
 ## What's an attribute?

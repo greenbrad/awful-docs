@@ -6,6 +6,7 @@ export default function BlogIndex({ more = "Read more" }) {
     // Alias `<a>` to avoid it being replaced by MDX components.
     const A = "a";
     return (
+      // eslint-disable-next-line react/jsx-key
       <div className="">
         <h3>
           <Link href={page.route}>

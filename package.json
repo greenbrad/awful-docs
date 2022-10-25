@@ -1,9 +1,10 @@
 {
-  "name": "swr-site",
+  "name": "awful-docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "next lint",
     "dev": "next",
     "debug": "NODE_OPTIONS='--inspect' next",
     "start": "next start",
@@ -21,10 +22,13 @@
     "nextra-theme-docs": "^2.0.0-beta.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-intersection-observer": "^8.26.2"
+    "react-intersection-observer": "^8.26.2",
+    "typescript": "^3.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
+    "eslint": "8.26.0",
+    "eslint-config-next": "12.3.1",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.16"
   },

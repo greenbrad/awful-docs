@@ -2,6 +2,7 @@ import { useRef, useCallback, useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import 'intersection-observer'
 
+// eslint-disable-next-line import/no-anonymous-default-export, react/display-name
 export default ({ src, caption, ratio }) => {
   const [inViewRef, inView] = useInView({
     threshold: 1,

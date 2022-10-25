@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 
 export const draw = (paths = {}, name = "") => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { locale, defaultLocale } = useRouter();
 
   if (!paths.hasOwnProperty(defaultLocale)) {
