@@ -1,0 +1,24 @@
+{
+  "index": {
+    "title": "Introduction",
+    "type": "page",
+    "hidden": true
+  },
+  "docs": {
+    "title": "Docs",
+    "type": "page"
+  },
+  "examples": {
+    "hidden": true,
+    "title": "Examples",
+    "type": "page"
+  },
+  "blog": {
+    "hidden": true,
+    "title": "Blog",
+    "type": "page",
+    "theme": {
+      "sidebar": false
+    }
+  }
+}
